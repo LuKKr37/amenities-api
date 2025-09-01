@@ -28,7 +28,7 @@ def get_db_connection():
 
 # Definimos la "ruta" o "endpoint".
 # Cuando se visite la URL/properties/1/amenities, se buscarán las comodidades del apartamento con ID 1.
-@app.route('/properties/<int:property_id>/amenities', methods=)
+@app.route('/properties/<int:property_id>/amenities', methods=['GET'])
 def get_property_amenities(property_id):
     try:
         # 1. Conectarse a la base de datos
