@@ -24,7 +24,7 @@ def get_db_connection():
 
 # --- PASO 2: LA HABILIDAD MEJORADA DE LA API ---
 
-@app.route('/properties/<int:property_id>/details', methods=)
+@app.route('/properties/<int:property_id>/details', methods=['GET'])
 def get_property_details(property_id):
     try:
         conn = get_db_connection()
